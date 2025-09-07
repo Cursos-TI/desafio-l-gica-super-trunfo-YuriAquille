@@ -51,3 +51,23 @@ printf("\nCadastro da Carta 2:\n");
     scanf("%d", &c2.pontosTuristicos);
 
     // Mostrar cartas
+
+printf("\n--- Carta 1 ---\n");
+    printf("Cidade: %s | Populacao: %d | Area: %.2f | PIB: %.2f | Pontos Turisticos: %d\n",
+           c1.cidade, c1.populacao, c1.area, c1.pib, c1.pontosTuristicos);
+
+    printf("\n--- Carta 2 ---\n");
+    printf("Cidade: %s | Populacao: %d | Area: %.2f | PIB: %.2f | Pontos Turisticos: %d\n",
+           c2.cidade, c2.populacao, c2.area, c2.pib, c2.pontosTuristicos);  
+
+ // Escolha do atributo
+
+    printf("\nEscolha o atributo para comparar:\n");
+    printf("1 - Populacao\n");
+    printf("2 - Area\n");
+    printf("3 - PIB\n");
+    printf("4 - Pontos Turisticos\n");
+    printf("5 - Densidade Populacional\n");
+    printf("Opcao: ");
+    scanf("%d", &opcao);
+    
