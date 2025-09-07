@@ -70,4 +70,39 @@ printf("\n--- Carta 1 ---\n");
     printf("5 - Densidade Populacional\n");
     printf("Opcao: ");
     scanf("%d", &opcao);
-    
+
+// Comparação
+
+if(opcao == 1) {
+        if(c1.populacao > c2.populacao) printf("Vencedora: %s\n", c1.cidade);
+        else if(c2.populacao > c1.populacao) printf("Vencedora: %s\n", c2.cidade);
+        else printf("Empate!\n");
+    }
+    else if(opcao == 2) {
+        if(c1.area > c2.area) printf("Vencedora: %s\n", c1.cidade);
+        else if(c2.area > c1.area) printf("Vencedora: %s\n", c2.cidade);
+        else printf("Empate!\n");
+    }
+    else if(opcao == 3) {
+        if(c1.pib > c2.pib) printf("Vencedora: %s\n", c1.cidade);
+        else if(c2.pib > c1.pib) printf("Vencedora: %s\n", c2.cidade);
+        else printf("Empate!\n");
+    }
+    else if(opcao == 4) {
+        if(c1.pontosTuristicos > c2.pontosTuristicos) printf("Vencedora: %s\n", c1.cidade);
+        else if(c2.pontosTuristicos > c1.pontosTuristicos) printf("Vencedora: %s\n", c2.cidade);
+        else printf("Empate!\n");
+    }
+    else if(opcao == 5) {
+        float dens1 = c1.populacao / c1.area;
+        float dens2 = c2.populacao / c2.area;
+        if(dens1 < dens2) printf("Vencedora: %s\n", c1.cidade);
+        else if(dens2 < dens1) printf("Vencedora: %s\n", c2.cidade);
+        else printf("Empate!\n");
+    }
+    else {
+        printf("Opcao invalida!\n");
+    }
+
+    return 0;
+}
