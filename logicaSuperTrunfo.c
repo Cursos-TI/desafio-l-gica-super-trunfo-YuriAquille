@@ -34,3 +34,20 @@ int main() {
 
     // cadastro da carta 2
 
+printf("\nCadastro da Carta 2:\n");
+    printf("Estado: ");
+    scanf(" %[^\n]", c2.estado);
+    printf("Codigo: ");
+    scanf(" %[^\n]", c2.codigo);
+    printf("Cidade: ");
+    scanf(" %[^\n]", c2.cidade);
+    printf("Populacao: ");
+    scanf("%d", &c2.populacao);
+    printf("Area (km2): ");
+    scanf("%f", &c2.area);
+    printf("PIB (bilhoes): ");
+    scanf("%f", &c2.pib);
+    printf("Pontos Turisticos: ");
+    scanf("%d", &c2.pontosTuristicos);
+
+    // Mostrar cartas
